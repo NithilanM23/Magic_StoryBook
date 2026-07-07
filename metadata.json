@@ -1,0 +1,6 @@
+{
+  "name": "Storybook Reader & Illustrator for Kids",
+  "description": "An interactive storybook reader that reads stories aloud using Gemini TTS and generates custom page-by-page illustrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
