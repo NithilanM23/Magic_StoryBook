@@ -65,13 +65,12 @@ npm run dev
 The application will start concurrently, spinning up both the Express backend and the Vite frontend. It should be accessible at http://localhost:3000.
 
 ## 📁 Project Structure Highlights
-/server.ts - The Express backend that securely communicates with the Google Gen AI API for generating stories, audio, images, and chat responses.
 
-/src/App.tsx - The core React application containing the UI logic, state management for the story reader, and the chat companion sidebar.
+* **`/server.ts`** - The Express backend that securely communicates with the Google Gen AI API for generating stories, audio, images, and chat responses.
+* **`/src/App.tsx`** - The core React application containing the UI logic, state management for the story reader, and the chat companion sidebar.
+* **`/src/sound.ts`** - A custom Web Audio API synthesizer that adds child-friendly, UI sound effects (like bubbly pops, magical sparkles, and page flips).
+* **`/src/types.ts`** - TypeScript interfaces defining the data structures for Stories, Pages, Chat Messages, and Companions.
 
-/src/sound.ts - A custom Web Audio API synthesizer that adds child-friendly, UI sound effects (like bubbly pops, magical sparkles, and page flips).
-
-/src/types.ts - TypeScript interfaces defining the data structures for Stories, Pages, Chat Messages, and Companions.
 
 ## Build and Production
 To build the project for production, run:
