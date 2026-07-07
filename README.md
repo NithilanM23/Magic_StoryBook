@@ -51,3 +51,34 @@ Follow these instructions to get a copy of the project up and running on your lo
 2. **Install dependencies:**
    ```bash
    npm install
+    ```
+
+3. **Set up Environment Variables:**
+Create a .env file in the root directory (you can copy .env.example) and add your Gemini API Key:
+
+GEMINI_API_KEY="YOUR_GEMINI_API_KEY_HERE"
+
+Start the development server:
+```Bash
+npm run dev
+```
+The application will start concurrently, spinning up both the Express backend and the Vite frontend. It should be accessible at http://localhost:3000.
+
+## 📁 Project Structure Highlights
+/server.ts - The Express backend that securely communicates with the Google Gen AI API for generating stories, audio, images, and chat responses.
+
+/src/App.tsx - The core React application containing the UI logic, state management for the story reader, and the chat companion sidebar.
+
+/src/sound.ts - A custom Web Audio API synthesizer that adds child-friendly, UI sound effects (like bubbly pops, magical sparkles, and page flips).
+
+/src/types.ts - TypeScript interfaces defining the data structures for Stories, Pages, Chat Messages, and Companions.
+
+## Build and Production
+To build the project for production, run:
+```Bash
+npm run build
+```
+This command compiles the React frontend using Vite and bundles the Node.js backend using esbuild. You can then start the production server with:
+```Bash
+npm run start
+```
